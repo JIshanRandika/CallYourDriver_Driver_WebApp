@@ -6,6 +6,7 @@ const DriverTable = ({ drivers, onToggleAvailability }) => {
       <thead>
         <tr style={{ backgroundColor: '#f4f4f4', textAlign: 'left' }}>
           <th style={{ padding: '10px' }}>Park</th>
+          <th style={{ padding: '10px' }}>Category</th>
           <th style={{ padding: '10px' }}>Availability</th>
           <th style={{ padding: '10px' }}>Actions</th>
         </tr>
@@ -14,6 +15,7 @@ const DriverTable = ({ drivers, onToggleAvailability }) => {
         {drivers.map((driver) => (
           <tr key={driver.contactNumber} style={{ borderBottom: '1px solid #ddd' }}>
             <td style={{ padding: '10px', color: 'white' }}>{driver.parkName}</td>
+            <td style={{ padding: '10px', color: 'white' }}>{driver.category}</td>
             <td style={{ padding: '10px', color: 'white', backgroundColor: driver.currentAvailability ? 'green' : 'red' }}>{driver.currentAvailability ? 'Available' : 'Unavailable'}</td>
             <td style={{ padding: '10px', color: 'white' }}>
               <button
