@@ -47,7 +47,7 @@ function LoginPage() {
       backgroundColor: '#1E1E2C',
       color: '#FFF',
     }}>
-      <h1 style={styles.title}>Login as Driver</h1>
+      <h1 style={styles.title}>🛵Login as Driver🛺</h1>
       {error && <p style={styles.error}>{error}</p>}
       <input
         type="text"
